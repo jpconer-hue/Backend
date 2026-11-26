@@ -4,7 +4,7 @@ import { Controller, Get, Post, Put, Delete, Body, Param, UseGuards, Req
 import { BudgetsService } from './budget.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-@Controller('budget')
+@Controller('budgets')
 export class BudgetsController {
   constructor(private budgetsService: BudgetsService) {}
 
