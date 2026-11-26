@@ -4,7 +4,7 @@ import { Controller,  Get, Post, Put, Delete, Body, Param, UseGuards,
 import { CategoriesService } from './category.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-@Controller('category')
+@Controller('categories')
 export class CategoryController {
   constructor(private categoryService: CategoriesService) {}
 
