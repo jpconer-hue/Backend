@@ -4,7 +4,7 @@ import { Controller, Get, Post, Put, Delete, Body, Param, UseGuards, Request,
 import { AllowancesService } from './allowance.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-@Controller('allowance')
+@Controller('allowances')
 export class AllowancesController {
   constructor(
     private allowancesService: AllowancesService,
